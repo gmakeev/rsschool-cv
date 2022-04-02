@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,48 +8,152 @@
   <title>CV</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <header class="header">
     <div class="container">
       <div class="header__wrap">
-      <div class="header__photo">
-        <img class="photo__img" src="images/photo.jpg" alt="my photo">
-      </div>
-      <div class="header__content">
-        <nav class="menu header__menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link menu__link--active" href="#">Contacts</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">About</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Skills</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Code</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Experience</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Education</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Experience</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__info">
-          <h1 class="header__title">Gregoriy Makeev</h1>
-          <h2 class="header__subtitle">Frontend developer(Beginner)</h2>
+        <div class="header__photo">
+          <img class="photo__img" src="images/photo.jpg" alt="my photo">
+        </div>
+        <div class="header__content">
+          <nav class="menu header__menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link menu__link--active" href="#contacts">Contacts</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#about">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#skills">Skills</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#code">Code</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Education</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__info">
+            <h1 class="header__title">Gregoriy Makeev</h1>
+            <h2 class="header__subtitle">Frontend developer(Beginner)</h2>
+          </div>
         </div>
       </div>
     </div>
-    </div>
   </header>
 
-  
+  <main>
+    <div class="container">
+      <div class="main__wrap">
+      <aside class="aside">
+        <section class="contacts" id="contacts">
+          <article class="article contacts__article">
+            <h3 class="article__title">Contacts</h3>
+            <ul class="article__list">
+              <li class="article__item">
+                <img src="images/icons/email.svg" alt="">
+                <a href="email:gmakan55@gmail.com">gmakan55@gmail.com</a>
+              </li>
+              <li class="article__item">
+                <img src="images/icons/phone.svg" alt="">
+                <a class="contact__link" href="tel:+9129102320">
+                  Phone : 0029129102320
+                </a>
+              </li>
+              <li class="article__item">
+                <img src="images/icons/telegram.svg" alt="">
+                Gregory
+              </li>
+            </ul>
+          </article>
+        </section>
+        <section class="skills" id="skills">
+          <article class="article skills__article">
+            <h3 class="article__title">Skills</h3>
+            <ul class="article__list">
+              <li class="article__item">HTML5, CSS3</li>
+              <li class="article__item">BEM, SASS</li>
+              <li class="article__item">JavaScript Basics</li>
+              <li class="article__item">Git</li>
+              <li class="article__item">Figma</li>
+              <li class="article__item">Angular Basic</li>
+            </ul>
+          </article>
+        </section>
+        <section class="languages">
+          <article class="article languages__article">
+            <h3 class="article__title">Languages</h3>
+            <ul class="article__list">
+              <li class="article__item">
+                <span class="language-name">English</span>
+                Intermediate
+              </li>
+              <li class="article__item">
+                <span class="language-name">Ukranian</span>
+                Native
+              </li>
+              <li class="article__item">
+                <span class="language-name">Russian</span>
+                Native
+              </li>
+            </ul>
+          </article>
+        </section>
+      </aside>
+
+      <div class="info">
+        <section class="about">
+          <h2 class="about__title">About me</h2>
+          <p class="about__desc">
+            I am 23 years old, I work as a design engineer. I think that my actual job will lead me to stagnation some day or other. I really need in activities where I can develop during my life. That is why I`m here. My goal is to gain knowledge in the field of front-end development.
+          </p>
+        </section>
+    
+        <section class="code">
+          <h2 class="code__title">Code example</h2>
+          <pre>
+            let arr = [3, -2, 4, 1, 9, -3, 0, 0, 2, -8, 12];
+            let arr_res;
+    
+            const f = () => {
+                arr_res = arr.map( item => {
+                    if ( item > 0) {
+                        return item;
+                    } else {
+                        return 0;
+                    }
+                });
+                console.log(arr);
+                console.log(arr_res);
+            };
+    
+            f();
+          </pre>
+        </section>
+      </div>
+    </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrap">
+        <div class="footer__year">2021</div>
+        <div class="footer__github">
+          <a href=""></a>
+        </div>
+        <div class="footer__rsschool">
+          <a href="https://rs.school/js/">
+            <img src="images/icons/rs_school_js.svg" alt="RS School">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
